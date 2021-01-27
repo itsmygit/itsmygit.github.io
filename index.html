@@ -18,16 +18,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <title>Welcome...</title>
     <link rel="stylesheet" href="/style.css">
-    <script>
-        FontFaceOnload("mfo", {
-    success: function() {
-        document.getElementById("lo").style.opacity = "0";
-    },
-    error: function() {},
-    timeout: 5000 // in ms. Optional, default is 10 seconds
-});
-
-    </script>
 </head>
 <body>
     <div id="lo" class="loading"><div class="tt">In a second...</div></div>
@@ -46,5 +36,15 @@
         <div class="magic" id="mag1">scroll down</div>
     </div>
     <script src="/main.js"></script>
+    <script>
+        FontFaceOnload("mfo", {
+    success: function() {
+        document.getElementById("lo").style.opacity = "0";
+    },
+    error: function() {},
+    timeout: 5000 // in ms. Optional, default is 10 seconds
+});
+
+    </script>
 </body>
 </html>
