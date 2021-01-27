@@ -13,10 +13,19 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="msapplication-navbutton-color" content="#000000">
+<script src="https://cdn.jsdelivr.net/npm/fontfaceonload@1.0.2/src/fontfaceonload.min.js"></script>
 
 <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <title>Welcome...</title>
     <link rel="stylesheet" href="/style.css">
+    <script>
+        FontFaceOnload("mfo", {
+    success: function() {
+        document.getElementById("lo").style.display = "none";
+    },
+    error: function() {}
+        });
+    </script>
 </head>
 <body>
     <div id="lo" class="loading"><div class="tt">In a second...</div></div>
