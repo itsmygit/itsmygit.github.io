@@ -21,10 +21,12 @@
     <script>
         FontFaceOnload("mfo", {
     success: function() {
-        document.getElementById("lo").style.display = "none";
+        document.getElementById("lo").style.opacity = "0";
     },
-    error: function() {}
-        });
+    error: function() {},
+    timeout: 5000 // in ms. Optional, default is 10 seconds
+});
+
     </script>
 </head>
 <body>
