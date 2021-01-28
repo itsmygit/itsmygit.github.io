@@ -28,9 +28,13 @@
             <h2 id="what" class="f-out">I am a Software Engineer...</h2>
             <h3 id="hk" class="f-out">If you like this, it means you would love what I do...</h3>
             <p id="contact" class="f-out">I am open to new projects so feel free to contact me at <i>
+
                 <a href = "mailto: itsmygit@gmail.com">itsmygit@gmail.com</a>
                 
-                </i></p>
+                </i>or check out my other works<i>
+                    <a href = "https://itsmygit.github.io/works">here</a>
+                    
+                    </i></p>
         </div>
         <div class="magic" id="mag">scroll down</div>
         <div class="magic" id="mag1">scroll down</div>
@@ -40,6 +44,7 @@
         FontFaceOnload("mfo", {
     success: function() {
         document.getElementById("lo").style.opacity = "0";
+        setTimeout(()=>{document.getElementById("lo").style.display = "none";},4000)
     },
     error: function() {},
     timeout: 5000 // in ms. Optional, default is 10 seconds
